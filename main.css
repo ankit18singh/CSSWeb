@@ -1,0 +1,338 @@
+
+body{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	display: inline;
+}
+
+#sky{
+	width: 100%;
+	height: 500px;
+	animation-name: skycolor;
+	animation-duration: 30s;
+	background-color: #00001a;
+	animation-iteration-count: infinite;	
+}
+#hill,#hill2,#hill3,#hill4,#hill5 {
+  width: 0; 
+  height: 0;
+  position: absolute; 
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid black;
+  animation-name: hillcolor;
+  animation-duration: 30s;	
+  animation-iteration-count: infinite;
+  
+}
+
+#hill{
+	top:350px;
+  left:0;
+}
+#hill2 {  
+	top:350px;
+  left:300px;
+  z-index: 3;
+  }
+
+#hill3 {
+  top:350px;
+  left:600px;
+  z-index: 2;
+  }
+
+#hill4 {
+  top:350px;
+  left:900px;
+  }
+
+#hill5 {
+  top:350px;
+  right:0;
+  }
+
+#sun { 
+  position: absolute;
+	top:50;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;  
+	width:150px;
+	height:150px;
+	border-radius:50%;	
+	background:radial-gradient(circle,yellow,orange,red);
+	opacity:0.9;			
+	box-shadow: 0px 0px 40px 25px orange;  
+	transition: transform 20s;
+	animation-name: sunrise;
+	animation-duration: 30s;
+	animation-iteration-count:infinite;
+	
+}
+
+
+#moon{
+	background-color: white;
+	border-radius: 100%;
+	height:70px;
+	width:70px;
+	position: absolute;
+	bottom:400px;
+	right:300px;
+	z-index:0;
+	transition: transform 20s;
+	animation-name: sunset;
+	animation-duration: 30s;
+	animation-iteration-count:infinite;
+
+}
+
+#ground{
+	position: absolute;
+	background-color: green;
+	width: 100%;
+	height:500px;
+	z-index: 1;
+	animation-name: groundcolor;
+	animation-iteration-count: infinite;
+	animation-duration: 30s;
+}
+
+#sidehome{
+	position: absolute;
+	background: linear-gradient(237deg,#b30000, #e60000);
+	height:120px;
+	width: 160px;
+	left:160px;
+	top:140px;
+	transform: skewY(5deg);
+}
+table{
+	position: absolute;
+}
+
+table, td{
+	border:1px solid white;
+	left:40px;
+	top:30px;
+}
+
+td{
+	padding: 10px;
+	background-color: yellow;
+	animation-name: dim2;
+	animation-iteration-count: infinite;
+	animation-duration: 30s;
+	
+}
+
+#fronthome{
+	position: absolute;
+	background: linear-gradient(to bottom,#cc0000, red);
+	height: 120px;
+	width: 90px;
+	top: 135px;
+	left: 320px;
+	transform: skewY(165deg);
+}
+
+#door{
+	position: absolute;
+	background-color: yellow;
+	width: 40px;
+	height: 90px;
+	left: 30px;
+	top:30px;
+	animation-name: dim;
+	animation-iteration-count: infinite;
+	animation-duration: 30s;
+
+}
+
+#tophome{
+	position: absolute;
+	background: linear-gradient(to bottom, black, #4d0000);
+	height: 90px;
+	width:180px;
+	left:168px;
+	top:65px;
+	transform: skewX(143deg) rotate(2deg);
+	z-index: 1;
+}
+
+#chim{
+	background: linear-gradient(237deg,#b30000, #e60000);
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left:220px;
+	top:50px;
+	transform: rotate(2deg);
+	z-index: 1;
+}
+
+#smoke{
+	position: absolute;
+	top:40px;
+	left:230px;
+	margin: auto;  
+	width:5px;
+	height:5px;
+	border-radius:100%;	
+	background-color: white;
+	opacity:0.4;			
+	box-shadow: 0px 0px 2px 5px white;  
+	transition: transform 1s;
+	animation-name: smokin;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	z-index: -1;
+}
+
+
+#leftpart{
+  width: 0; 
+  height: 0;
+  position: absolute; 
+  left:312px;
+  top:70px;
+  border-left: 70px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #cc0000;
+  transform: skewY(170deg) rotate(-4deg);
+  z-index: -1;
+}
+
+#car{
+background:linear-gradient(to bottom,#000099,blue);
+	border-radius: 30px 50px 0px 0px;
+	width: 120px;
+	height: 70px; 
+	position: absolute;
+	left: 520px;
+	top:130px;
+}
+
+#window{
+	background-color: white;
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	left:590px;
+	top:140px;
+	border-radius: 10px 60px 0px 0px;
+}
+#window2{
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left:530px;
+	top:140px;
+	border-radius: 60px 10px 0px 0px;
+}
+
+#wheel1,#wheel2{
+	
+	background-color: black;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px; 
+	position: absolute;	
+	z-index: 0;
+}
+
+#wheel1{
+	left: 510px;
+	top:170px;
+}
+
+#wheel2{
+	left: 600px;
+	top:170px;
+}
+
+#carbody{
+	background:linear-gradient(to bottom,#000099,blue);
+	border-radius: 50px 60px 10px 10px;
+	width: 200px;
+	height: 40px; 
+	position: relative;
+	left: 480px;
+	top:160px;
+	z-index: 1;
+}
+
+#car, #carbody,#wheel1, #wheel2, #window, #window2{
+	animation-name: motion;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	z-index:-2;
+	display: block;
+}
+
+@keyframes skycolor{
+	0%{background-color: #00001a;}
+	25%{background-color: #6666ff}
+	50%{background-color: #ffff4d}
+	75%{background-color: #e62e00}
+	100%{background-color: #00001a;}
+}
+@keyframes sunrise{
+	0%{transform: translate(0px,0px);box-shadow: 0px 0px 40px 25px orange;z-index: 1;}
+	25%{transform: translate(0px,-300px);box-shadow: 0px 0px 40px 10px yellow;z-index: 1;}
+	50%{transform: translate(0px,-400px);box-shadow: 0px 0px 40px 5px red;z-index: 1;}
+	75%{transform: translate(0px,-300px);box-shadow: 0px 0px 40px 10px yellow;z-index: 1;}
+	100%{transform: translate(0px,0px);box-shadow: 0px 0px 40px 25px orange;z-index: 1;}
+}
+@keyframes sunset{
+	0%{background-color: rgba(255,255,255,0.8);}
+	25%{background-color: rgba(255,255,255,0.1);}
+	50%{background-color: rgba(255,255,255,0);}
+	75%{background-color: rgba(255,255,255,0.1)}
+	100%{background-color: rgba(255,255,255,0.8);}
+}
+@keyframes groundcolor{
+	0%{background-color: #003300;}
+	25%{background-color: #00b300;}
+	50%{background-color: #00e600;}
+	75%{background-color: #00b300;}
+	100%{background-color: #003300;}
+}
+@keyframes smokin{
+	from{transform: translate(0px,0px);box-shadow: 0px 0px 40px 25px white;z-index: 1;}
+	to{transform: translate(0px,-60px);box-shadow: 0px 0px 40px 25px white;z-index: 1; opacity: 0.1}
+}
+@keyframes dim{
+	0%{background-color: yellow;}
+	25%{background-color: yellow;}
+	50%{background-color: black;}
+	75%{background-color: yellow;}
+	100%{background-color: yellow;}
+}
+
+@keyframes dim2{
+	0%{background-color: yellow;}
+	25%{background-color: yellow;}
+	50%{background-color: black;}
+	75%{background-color: yellow;}
+	100%{background-color: yellow;}
+}
+/*
+@keyframes motion{
+	0%{transform: translate(0px,0px);}
+	25%{transform: translate(800px,0px)}
+	50%{display:;}
+	100%{transform: translate(-300px,0px);}
+}
+*/
